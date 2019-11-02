@@ -8,7 +8,7 @@ from os import path
 import setuptools
 
 # 版本号
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 
 # 发布作者
 AUTHOR = "xuzhili"
@@ -57,7 +57,7 @@ setup(
     # 指定控制台命令
     entry_points={
         'console_scripts': [
-            'demo = demo:main',  # pip安装完成后可使用demo命令调用demo下的main方法
+            'floorutil = floorutil:main',  # pip安装完成后可使用demo命令调用demo下的main方法
         ],
     },
     keywords=KEYWORDS,

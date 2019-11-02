@@ -6,6 +6,9 @@ def send_email():
     yag.send(to="lintao@znds.com", subject="邮件批量发送测试", contents=["Hello need not to answer"])
     return
 
+def main():
+    print("test send_email")
+
 if __name__ == "__main__":
     send_email()
     print("send an email")

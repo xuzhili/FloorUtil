@@ -12,7 +12,7 @@ python setup.py sdist
 Testing
 
 ```
-pip install dist/floorutil-0.0.1.tar.gz 
+pip install dist/floorutil-1.0.0.tar.gz 
 ```
 
 ```
@@ -24,5 +24,11 @@ Distributing
 ```
 pip install twine
 
-twine upload dist/floorutil-0.0.1.tar.gz 
+twine upload dist/floorutil-1.0.0.tar.gz 
+```
+
+newversion
+
+```buildoutcfg
+https://pypi.org/project/floorutil/
 ```
