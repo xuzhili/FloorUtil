@@ -8,7 +8,7 @@ from os import path
 import setuptools
 
 # 版本号
-VERSION = '1.0.2'
+VERSION = '1.0.3'
 
 # 发布作者
 AUTHOR = "xuzhili"
