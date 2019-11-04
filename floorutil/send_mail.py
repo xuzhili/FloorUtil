@@ -40,7 +40,8 @@ class SendMail:
         parser.add_option('-s', '--subject', dest='subject', help='mail subject')
         parser.add_option('-c', '--content', dest='content', help='mail content')
         parser.add_option('-p', '--pwd', dest='pwd', help='password')
-        parser.add_option('-r', '--smtp_server', dest='smtp_server', help='smtp server')
+        parser.add_option('-r', '--smtp_server', dest='smtp_server', default='smtp.exmail.qq.com', help='smtp server')
+        parser.add_option('-a', '--to_addr', dest='to_addr', help='receivers')
 
         (options, args) = parser.parse_args()
 
@@ -51,12 +52,12 @@ class SendMail:
 if __name__ == '__main__':
     mail = SendMail()
     mail_options = mail.parse_options()
-
     mail_from = mail_options.from_name
     mail_to = mail_options.to_name
     mail_subject = mail_options.subject
     mail_content = mail_options.content
     mail_pwd = mail_options.pwd
     mail_smtp_server = mail_options.smtp_server
+    mail_to_addr = mail_options.to_addr.split(',')
 
-    mail.build_mail(mail_from, mail_to, mail_subject, mail_content, mail_from, mail_pwd, mail_to, mail_smtp_server)
+    mail.build_mail(mail_from, mail_to, mail_subject, mail_content, mail_from, mail_pwd, mail_to_addr, mail_smtp_server)
