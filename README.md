@@ -32,3 +32,15 @@ newversion
 ```buildoutcfg
 https://pypi.org/project/floorutil/
 ```
+
+how to create doc?
+
+**create md**
+```buildoutcfg
+python -m pydoc floorutil\email_util.py > doc.md
+```
+
+**create html**
+```buildoutcfg
+python -m pydoc -w floorutil\email_util.py
+```
