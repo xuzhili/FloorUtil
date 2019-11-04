@@ -19,11 +19,10 @@ CLASSES
      |      -s subject
      |      -c content
      |      -p pwd
-     |      -r smtp_server
      |      -a to_addr
      |      :return:
      |  
-     |  send_mail(self, from_name, to_name, subject, content, from_addr, pwd, to_addr, smtp_server)
+     |  send_mail(self, from_name, to_name, subject, content, from_addr, pwd, to_addr)
      |      发送邮件
      |      :param from_name: 发送方名字，数组类型，可指定多个
      |      :param to_name: 收件人名字，数组类型，可指定多个
@@ -32,7 +31,6 @@ CLASSES
      |      :param from_addr: 发送方邮箱地址，数组类型，可指定多个
      |      :param pwd: 发送方邮箱密码
      |      :param to_addr: 发送方邮箱地址，数组类型，可指定多个
-     |      :param smtp_server: 发送方邮箱域名
      |      :return:
      |  
      |  ----------------------------------------------------------------------
