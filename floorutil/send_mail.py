@@ -50,13 +50,13 @@ class SendMail:
 
 if __name__ == '__main__':
     mail = SendMail()
-    options = mail.parse_options()
+    mail_options = mail.parse_options()
 
-    mail_from = options.from_name
-    mail_to = options.to_name
-    mail_subject = options.subject
-    mail_content = options.content
-    mail_pwd = options.pwd
-    mail_smtp_server = options.smtp_server
+    mail_from = mail_options.from_name
+    mail_to = mail_options.to_name
+    mail_subject = mail_options.subject
+    mail_content = mail_options.content
+    mail_pwd = mail_options.pwd
+    mail_smtp_server = mail_options.smtp_server
 
     mail.build_mail(mail_from, mail_to, mail_subject, mail_content, mail_from, mail_pwd, mail_to, mail_smtp_server)
